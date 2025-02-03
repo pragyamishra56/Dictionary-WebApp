@@ -30,7 +30,7 @@ function Content() {
 
       <LoadingPage />
       ) : data ? (
-        // Show content after downloading Veriler
+        // Veriler yüklendikten sonra içeriği göster
         <>
           <div className="mt-7 md:mt-12 flex justify-between items-center gap-2 md:gap-3">
             <div className="flex flex-col">
@@ -46,7 +46,7 @@ function Content() {
           <Example data={data} />
         </>
       ) : (
-        // Show error page in case of error
+        // Hata durumunda error sayfasını göster
         <ErrorPage />
       )}
     </>
